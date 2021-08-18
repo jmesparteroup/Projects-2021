@@ -1,0 +1,17 @@
+blt:
+addi $1, $0, 0xFFFF   // $1 = -1
+addi $2, $0, 0x69     // $2 = 0x69
+blt $1, $2, branch    // 1<2 TRUE
+addi $1, $0, 0x6969   //should skip
+addi $2, $0, 0xb0b0   //should skip
+branch:
+addi $3, $0, 0xc521 // should show 0xFFFFC521
+
+2001ffff
+20020069
+7c220002  
+20016969
+2002b0b0
+2003c521
+
+(01111100001000100000000000000010)

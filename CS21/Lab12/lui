@@ -1,0 +1,7 @@
+lui:
+addi $1, $0, 0xBABE
+lui $1, 0xC0DE
+
+2001babe
+3d41c0de
+00111101010000011100000011011110 with dontCare (rs) = 01010

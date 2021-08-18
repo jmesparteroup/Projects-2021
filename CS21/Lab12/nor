@@ -1,0 +1,12 @@
+nor:
+addi $1, $0, 0xEE
+addi $2, $0, 0xAA
+nor $3, $1, $2 // should output 0xFFFFF11
+
+hex equivalent:
+200100ee
+200200aa
+00221867 (0000 0000 0010 0010 0001 1000 0110 0111)
+
+0000 0000 0010 0010 0001 1000 0110 0111
+note: shamt != 0
